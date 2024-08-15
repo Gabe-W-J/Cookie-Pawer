@@ -1,6 +1,6 @@
 // Define the image sources
-// load config.json from url 
-var pawerConfig = {};
+// load config.json from url https://raw.githubusercontent.com/Gabe-W-J/Cookie-Pawer/main/config.json
+var pawerConfig = {'https://raw.githubusercontent.com/Gabe-W-J/Cookie-Pawer/main/config.json'};
 
 fetch('')
 	.then((response) => response.json())
