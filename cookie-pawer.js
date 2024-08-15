@@ -11,6 +11,11 @@ fetch('https://raw.githubusercontent.com/Gabe-W-J/Cookie-Pawer/main/config.json'
 		PawerConfig = json;
 		var ImagesPath = PawerConfig.Web.ImagesPath;
 		var images = PawerConfig.Images;
+
+		// replace the images
+		for (var key in images) {
+			Game.Loader.Replace(key, ImagesPath + images[key]);
+		};
 		
 		var translations = {
 			"%1 cookie": [
@@ -29,10 +34,4 @@ fetch('https://raw.githubusercontent.com/Gabe-W-J/Cookie-Pawer/main/config.json'
 		var bakeryName = document.getElementById('bakeryName');
 		var newBakeryName = bakeryName.substr(0, bakeryName.length - 9)
 		bakeryName.innerHTML = newBakeryName;
-		// testing to see if changing the code order does anything
-
-		// replace the images
-		for (var key in images) {
-			Game.Loader.Replace(key, ImagesPath + images[key]);
-		};
 	}); 
