@@ -16,8 +16,8 @@ fetch('')
 
 		var translations = {
 			"%1 cookie": [
-				"%1 cookie",
-				"%1 cookie"
+				"%1 tested cookie",
+				"%1 tested cookie"
 			]
 		}
 		// fyi this is just to get rid of an annoying thing this script is based on, I don't want to risk breaking anything
