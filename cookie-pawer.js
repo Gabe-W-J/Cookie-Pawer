@@ -32,6 +32,6 @@ fetch('https://raw.githubusercontent.com/Gabe-W-J/Cookie-Pawer/main/config.json'
 		}
 
 		var bakeryName = document.getElementById('bakeryName');
-		const newBakeryName = bakeryName.substr(0, bakeryName.length - 9)
+		var newBakeryName = bakeryName.substr(0, bakeryName.length - 9)
 		bakeryName.innerHTML = newBakeryName;
 	}); 
