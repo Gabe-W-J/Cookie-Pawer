@@ -2,6 +2,9 @@
 // load config.json from url https://raw.githubusercontent.com/Gabe-W-J/Cookie-Pawer/main/config.json
 var pawerConfig = {'https://raw.githubusercontent.com/Gabe-W-J/Cookie-Pawer/main/config.json'};
 
+// Note: inside the config there is a references to ImagesPath, I want it to point to only the images I have in the images
+// directory but all the references use github.io pages which I don't know how to set up properly for this use case.
+
 fetch('')
 	.then((response) => response.json())
 	.then(function (json) {
