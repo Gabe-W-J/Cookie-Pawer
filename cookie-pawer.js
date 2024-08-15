@@ -1,13 +1,13 @@
 // Define the image sources
-// load config.json from url https://kayofeld.github.io/Cookie-Clicker-mod/config.json
-var boyKisserConfig = {};
+// load config.json from url 
+var pawerConfig = {};
 
-fetch('https://kayofeld.github.io/Cookie-Clicker-mod/config.json')
+fetch('')
 	.then((response) => response.json())
 	.then(function (json) {
-		boyKisserConfig = json;
-		var ImagesPath = boyKisserConfig.Web.ImagesPath;
-		var images = boyKisserConfig.Images;
+		PawerConfig = json;
+		var ImagesPath = PawerConfig.Web.ImagesPath;
+		var images = PawerConfig.Images;
 
 		// replace the images
 		for (var key in images) {
@@ -16,10 +16,11 @@ fetch('https://kayofeld.github.io/Cookie-Clicker-mod/config.json')
 
 		var translations = {
 			"%1 cookie": [
-				"%1 boy kissed",
-				"%1 boy kissed"
+				"%1 cookie",
+				"%1 cookie"
 			]
 		}
+		// fyi this is just to get rid of an annoying thing this script is based on, I don't want to risk breaking anything
 		if (ModLanguage('*', translations)) {
 			console.log("Language updated");
 		}
@@ -28,5 +29,6 @@ fetch('https://kayofeld.github.io/Cookie-Clicker-mod/config.json')
 		}
 
 		var bakeryName = document.getElementById('bakeryName');
-		bakeryName.innerHTML = 'Boy Kisser Game';
+		const newBakeryName = bakeryName.substr(0, bakeryName.length - 9)
+		bakeryName.innerHTML = newBakeryName;
 	}); 
