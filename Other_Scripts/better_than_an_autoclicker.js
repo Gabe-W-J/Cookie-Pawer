@@ -26,7 +26,7 @@ function automateCookieClicker() {
          else {
             clearInterval(cookieClickerInterval);
         }
-    }, 6);
+    }, 0.006);
 
     buildingPurchaseInterval = setInterval(function() {
         if (!Game.OnAscend) {
