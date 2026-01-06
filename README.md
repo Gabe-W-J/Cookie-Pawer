@@ -3,4 +3,4 @@ A Cookie Clicker Add-On that makes the game a little cuter! (also removes "'s ba
 
 Based off of [The Boykisser Add-On by Kayofield](https://kayofeld.github.io/Cookie-Clicker-mod/boykisser.js). (I hate boykisser I just want [the cute paw cursor](https://raw.githubusercontent.com/Gabe-W-J/Cookie-Pawer/main/images/cursorr.png))
 
-# NOTE: DOES NOT WORK RIGHT NOW, TRYING TO FIX BUT I DON'T KNOW WHAT IM DOING WRONG LOL
+# NOTE: DOES NOT WORK RIGHT NOW, LIKELY WON'T FIX BUT FEEL FREE TO MAKE A PR
